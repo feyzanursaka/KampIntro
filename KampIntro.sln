@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassMetotDemo", "ClassMeto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqProject", "LinqProject\LinqProject.csproj", "{80148A4D-E25D-4C72-81C6-C495DE2DB561}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkDemo", "EntityFrameworkDemo\EntityFrameworkDemo.csproj", "{78425DA8-9FA4-4075-AADC-FA97019DAF81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkDemo", "EntityFrameworkDemo\EntityFrameworkDemo.csproj", "{78425DA8-9FA4-4075-AADC-FA97019DAF81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attributes", "Attributes\Attributes.csproj", "{16B3BAA7-9B3E-4C3E-900C-EB46CB784851}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{78425DA8-9FA4-4075-AADC-FA97019DAF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78425DA8-9FA4-4075-AADC-FA97019DAF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78425DA8-9FA4-4075-AADC-FA97019DAF81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16B3BAA7-9B3E-4C3E-900C-EB46CB784851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16B3BAA7-9B3E-4C3E-900C-EB46CB784851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16B3BAA7-9B3E-4C3E-900C-EB46CB784851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16B3BAA7-9B3E-4C3E-900C-EB46CB784851}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
