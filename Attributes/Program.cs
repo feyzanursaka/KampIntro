@@ -13,6 +13,7 @@ namespace Attributes
 
         }
         [ToTable("Customers")]
+        [ToTable("TblCustomers")]
         class Customer
         {
             public int Id { get; set; }
@@ -36,10 +37,12 @@ namespace Attributes
                     customer.Id, customer.FirstName, customer.LastName, customer.Age);
             }
         }
+        [AttributeUsage(AttributeTargets.Property)]
         class RequiredPropertyAttribute : Attribute
         {
 
-        }
+        }        
+        [AttributeUsage(AttributeTargets.Class,AllowMultiple =true)]
         class ToTableAttribute : Attribute
         {
             private string _tableName;
