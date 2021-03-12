@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace Reflection
 {
@@ -11,9 +12,15 @@ namespace Reflection
             //Console.WriteLine(dortislem.Topla(3, 4));
 
             var type = typeof(DortIslem);
-            DortIslem dortIslem = (DortIslem)Activator.CreateInstance(type,6,7);
-            Console.WriteLine(dortislem.Topla(4, 5));
-            Console.WriteLine(dortIslem.Topla2());
+
+            //DortIslem dortIslem = (DortIslem)Activator.CreateInstance(type,6,7);
+            //Console.WriteLine(dortislem.Topla(4, 5));
+            //Console.WriteLine(dortIslem.Topla2());
+
+            var instance = Activator.CreateInstance(type,6,7);
+            MethodInfo methodInfo = instance.GetType().GetMethod("Topla2");
+
+            Console.WriteLine(methodInfo.Invoke(instance, null) ); 
             Console.ReadLine();
         }
     }
